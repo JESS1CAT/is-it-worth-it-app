@@ -34,7 +34,7 @@ def display_message(hours_required):
         return "🚫 Over 100,000 hours? Even eternity clocks out eventually. Unless you’re buying the moon, take a breath and walk away."
 
 # App title
-st.title("💸 Is It Worth It? Calculator")
+st.title("💸 Is It Worth It?")
 
 # Currency selector
 currency = st.selectbox("Choose your currency", ["$", "€", "£", "¥", "Other"])
