@@ -31,28 +31,4 @@ def display_message(hours_required):
     elif 10_000 < hours_required <= 100_000:
         return "This better be passed down in your will, featured in a documentary, or orbiting Earth. 🚀"
     else:
-        return "🚫 Over 100,000 hours? Even eternity clocks out eventually. Unless you’re buying the moon, take a breath and walk away."
-
-# App title
-st.title("💸 Is It Worth It?")
-
-# Currency selector
-currency = st.selectbox("Choose your currency", ["$", "€", "£", "¥", "Other"])
-if currency == "Other":
-    currency = st.text_input("Enter your custom currency symbol")
-
-# Input fields
-item_cost = st.number_input(f"Enter the cost of the item ({currency})", min_value=0.0, format="%.2f")
-hourly_wage = st.number_input(f"Enter your hourly wage ({currency})", min_value=0.01, value=15.00, format="%.2f")
-
-# When button is clicked
-if st.button("🧠 Calculate"):
-    hours_required = item_cost / hourly_wage
-
-    if hours_required > 100_000:
-        st.warning(f"⚠️ This would cost you {hours_required:,.2f} hours of work.")
-        st.error("🚫 Over 100,000 hours? Even eternity clocks out eventually...Unless you’re buying the moon, take a breath and walk away...")
-    else:
-        st.success(f"This will cost you approximately {hours_required:,.2f} hour(s) of work.")
-        st.info(display_message(hours_required))
-
+        return "🚫 Over 100,000 hours? Even eternity clocks out eventually. Unless you’re buying the moon, take a breath
