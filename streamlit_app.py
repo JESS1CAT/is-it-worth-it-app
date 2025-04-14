@@ -51,7 +51,7 @@ if st.button("🧠 Calculate"):
 
     if hours_required > 100_000:
         st.warning(f"⚠️ This would cost you {hours_required:,.2f} hours of work.")
-        st.error("🚫 Over 100,000 hours? Even eternity clocks out eventually... Maybe in the next life..")
+        st.error("🚫 Over 100,000 hours? Even eternity clocks out eventually...Unless you’re buying the moon, take a breath and walk away...")
     else:
         st.success(f"This will cost you approximately {hours_required:,.2f} hour(s) of work.")
         st.info(display_message(hours_required))
