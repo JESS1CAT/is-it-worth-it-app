@@ -2,7 +2,9 @@ import streamlit as st
 
 # Display a message based on hours required
 def display_message(hours_required):
-    if 0 < hours_required <= 0.25:
+    if hours_required == 0:
+        return "Nothing in life is free...except for whatever this is.."
+    elif 0 < hours_required <= 0.25:
         return "A steal! This is barely a coffee break. ☕"
     elif 0.25 < hours_required <= 1:
         return "That’s like one Zoom meeting. Treat yourself."
